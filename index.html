@@ -1,0 +1,129 @@
+<!--
+
+	@author: Arijit Saha
+	@desc: Html serving as header and footer template
+	@file path from root: Ex ./index.html/
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+    />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/css"> -->
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+
+            <!-- <div class="header-div">
+                <div class="nri-travel">NRI Travel</div>
+
+            </div> -->
+            <div class="header-div">
+                <div class="nrifintech"> ${NRI TRAVEL}</div>
+            </div>
+            <div class="header-end">
+
+                        <div class="header-end-items">
+                            <img class="vector-icon" alt="" src="public/vector2.svg" />
+                            <p class="header-end-items-text booking"> <a href=""> ${My Bookings} </a>   </p>     
+                        </div>
+
+              
+                        <div class="header-end-items">
+                                <img class="vector-icon" alt="" src="public/vector1.svg" />
+                                <p class="header-end-items-text logout">  <a href="">${Logout}  </a>  </p>
+                        </div>
+                
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="body-part">
+            
+                    <div>
+                        
+                        <!--
+
+                            Write your body code within this div
+
+                            Remove the Lorem text to add your code
+                            
+                             -->
+
+                             
+
+
+                             <div class="sidebar bar-block collapse card animate-left" style="width:200px;" id="mySidebar">
+                                <button class="bar-item button large hide-large" onclick="closeSidebar()">Close &times;</button>
+                                <a href="#" class="bar-item button">Employees</a>
+                                <a href="#" class="bar-item button">Routes</a>
+                                <a href="#" class="bar-item button">Bus</a>
+                                <a href="#" class="bar-item button">Generate Report</a>
+                              </div>
+                              
+                              <div class="main" style="margin-left:200px">
+                              <div class="teal">
+                                <button class="button teal xlarge hide-large" onclick="openSidebar()">&#9776;</button>
+                                
+                              </div>
+                              
+                              <div>
+                                <form action="/action_page.php">
+                                  
+                                  <input type="text" id="fname" name="firstname" placeholder="Name">
+                              
+                                  
+                                  <input type="text" id="lname" name="lastname" placeholder="Email">
+
+
+                                  <input type="text" id="lname" name="lastname" placeholder="Password">
+
+
+                                  <input type="text" id="lname" name="lastname" placeholder="Employee ID">
+                              
+                        
+                                </form>
+                              </div>
+                                 
+                              </div>
+                              
+                              
+                    </div>
+            
+           
+                        
+            </div>
+
+        <!-- Footer -->
+        <div class="footer">
+
+            <div class="footer-element">
+                NRI includes a copyright notice that reserves all rights for itself,
+                and has protected material from 1995 to 2021:
+            </div>
+            <div class="footer-element-smallerscreen">
+                All rights reserved by NRI
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>
