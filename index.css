@@ -134,8 +134,7 @@ body {
 .body-part {
     height: 800px;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .footer {
@@ -170,7 +169,7 @@ input[type=text], select {
   }
   
   input[type=submit] {
-    width: 100%;
+    /* width: 100%; */
     background-color: #082032;
     color: white;
     padding: 14px 20px;
@@ -178,6 +177,7 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: inline-block;
   }
   
   /* div {
@@ -189,7 +189,6 @@ input[type=text], select {
 form {
     padding: 0% 5%;
 }
-
 
 
 
@@ -420,7 +419,8 @@ html,
 body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5;
+    
 }
 
 html {
@@ -429,7 +429,7 @@ html {
 
 h1 {
     font-size: 36px;
-    padding : 5%;
+    padding : 2%;
 }
 
 h2 {
