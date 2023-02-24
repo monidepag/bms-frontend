@@ -70,40 +70,82 @@
 
                              <div class="sidebar bar-block collapse card animate-left" style="width:200px;" id="mySidebar">
                                 <button class="bar-item button large hide-large" onclick="closeSidebar()">Close &times;</button>
-                                <a href="#" class="bar-item button">Employees</a>
-                                <a href="#" class="bar-item button">Routes</a>
-                                <a href="#" class="bar-item button">Bus</a>
-                                <a href="#" class="bar-item button">Generate Report</a>
+                                <a href="#" class="bar-item button" onclick="firstdiv()">Employees</a>
+                                <a href="#" class="bar-item button" onclick="seconddiv()">Routes</a>
+                                <a href="#" class="bar-item button" onclick="thirddiv()">Bus</a>
+                                <a href="#" class="bar-item button" onclick="fourthdiv()">Generate Report</a>
                               </div>
                               
-                              <div class="main" style="margin-left:200px">
+                              <div class="main" style="margin-left:200px;">
                               <div class="teal">
                                 <button class="button teal xlarge hide-large" onclick="openSidebar()">&#9776;</button>
                                 
                               </div>
                               
-                              <div>
+                              <!--first div-->
+
+                              <div id="firstdiv" style="display:none;">
                                 <form action="/action_page.php">
-                                  <h1>Add an employee</h1>
+                                    <h1>Add an employee</h1>
+  
+                                    <input type="text" id="fname" name="firstname" placeholder="Name">
+                                
+                                    
+                                    <input type="text" id="lname" name="lastname" placeholder="Email">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Password">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID">
 
-                                  <input type="text" id="fname" name="firstname" placeholder="Name">
-                              
-                                  
-                                  <input type="text" id="lname" name="lastname" placeholder="Email">
+                                    <input type="submit" value="Add">
+  
+                                      <h1>Search/edit an employee</h1>
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Enter employee email or id">
+                                
+                                    <input type="submit" value="Search">
+                                    
+                                  </form>
+                              </div>
 
+                              <!--second div-->
 
-                                  <input type="text" id="lname" name="lastname" placeholder="Password">
+                              <div id="seconddiv" style="display:none;">
+                                <h1>Hello from second div</h1>
+                              </div>
 
+                              <!--third div-->
 
-                                  <input type="text" id="lname" name="lastname" placeholder="Employee ID">
+                              <div id="thirddiv" style="display:none;">
+                                <form action="/action_page.php">
+                                    <h1>Add a bus</h1>
+  
+                                    <input type="text" id="fname" name="firstname" placeholder="Bus Number">
+                                
+                                    
+                                    <input type="text" id="lname" name="lastname" placeholder="Total seats">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Bus Name">
+  
+  
+                                    
+  
+                                      <h1>Search/edit a bus</h1>
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Enter bus name/bus id/bus number">
+                                
+                                    <input type="submit" value="Search">
+                                    
+                                  </form>
+                              </div>
 
-                                    <h1>Search/edit an employee</h1>
+                              <!--fourth div-->
 
-                                  <input type="text" id="lname" name="lastname" placeholder="Enter employee email or id">
-                              
-                                  <input type="submit" value="Submit">
-                                  
-                                </form>
+                              <div id="fourthdiv" style="display:none;">
+                                <h1>Hello from 4th div</h1>
                               </div>
                                  
                               </div>
@@ -131,5 +173,6 @@
 
     <script src="./index.js">
     </script>
+    <script src="https://kit.fontawesome.com/8e546228e7.js" crossorigin="anonymous"></script>
 </body>
 </html>
