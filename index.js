@@ -27,3 +27,35 @@ function openSidebar() {
   function closeSidebar() {
 	document.getElementById("mySidebar").style.display = "none";
   }
+
+
+
+
+
+  function firstdiv(){
+	document.getElementById("firstdiv").style.display = "block";
+	document.getElementById("seconddiv").style.display = "none";
+	document.getElementById("thirddiv").style.display = "none";
+	document.getElementById("fourthdiv").style.display = "none";
+  }
+
+  function seconddiv(){
+	document.getElementById("firstdiv").style.display = "none";
+	document.getElementById("seconddiv").style.display = "block";
+	document.getElementById("thirddiv").style.display = "none";
+	document.getElementById("fourthdiv").style.display = "none";
+  }
+
+  function thirddiv(){
+	document.getElementById("firstdiv").style.display = "none";
+	document.getElementById("seconddiv").style.display = "none";
+	document.getElementById("thirddiv").style.display = "block";
+	document.getElementById("fourthdiv").style.display = "none";
+  }
+
+  function fourthdiv(){
+	document.getElementById("firstdiv").style.display = "none";
+	document.getElementById("seconddiv").style.display = "none";
+	document.getElementById("thirddiv").style.display = "none";
+	document.getElementById("fourthdiv").style.display = "block";
+  }
