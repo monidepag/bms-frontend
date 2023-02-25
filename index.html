@@ -1,9 +1,7 @@
 <!--
-
-	@author: Arijit Saha
-	@desc: Html serving as header and footer template
+	@author: Monidepa Ghosh
+	@desc: admin site
 	@file path from root: Ex ./index.html/
-
 -->
 
 
@@ -21,7 +19,7 @@
     />
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/css"> -->
 
-    <title>Document</title>
+    <title>Admin</title>
 </head>
 <body>
 
@@ -31,7 +29,6 @@
 
             <!-- <div class="header-div">
                 <div class="nri-travel">NRI Travel</div>
-
             </div> -->
             <div class="header-div">
                 <div class="nrifintech"> ${NRI TRAVEL}</div>
@@ -58,22 +55,20 @@
                     <div>
                         
                         <!--
-
                             Write your body code within this div
-
-                            Remove the Lorem text to add your code
+                            
                             
                              -->
 
                              
-
+                             <!--sidebar-->
 
                              <div class="sidebar bar-block collapse card animate-left" style="width:200px;" id="mySidebar">
                                 <button class="bar-item button large hide-large" onclick="closeSidebar()">Close &times;</button>
-                                <a href="#" class="bar-item button" onclick="firstdiv()">Employees</a>
-                                <a href="#" class="bar-item button" onclick="seconddiv()">Routes</a>
-                                <a href="#" class="bar-item button" onclick="thirddiv()">Bus</a>
-                                <a href="#" class="bar-item button" onclick="fourthdiv()">Generate Report</a>
+                                <a href="#" class="bar-item button" onclick="firstdiv()" id="text1">Employees</a>
+                                <a href="#" class="bar-item button" onclick="seconddiv()" id="text2">Routes</a>
+                                <a href="#" class="bar-item button" onclick="thirddiv()" id="text3">Bus</a>
+                                <a href="#" class="bar-item button" onclick="fourthdiv()" id="text4">Generate Report</a>
                               </div>
                               
                               <div class="main" style="margin-left:200px;">
@@ -97,7 +92,7 @@
                                     <input type="text" id="lname" name="lastname" placeholder="Password">
   
   
-                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID">
+                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID"><br>
 
                                     <input type="submit" value="Add">
   
@@ -113,7 +108,238 @@
                               <!--second div-->
 
                               <div id="seconddiv" style="display:none;">
-                                <h1>Hello from second div</h1>
+                                <form action="/action_page.php">
+                                  <h1>Add a route</h1>
+
+                                  <input type="text" id="fname" name="firstname" placeholder="NRI Fintech">
+                              
+                                  
+                                  <input type="text" id="lname" name="lastname" placeholder="Add Timing">
+
+
+                                  <input type="text" id="lname" name="lastname" placeholder="Ultodanga">
+
+                                  <input type="text" id="lname" name="lastname" placeholder="Add Timing">
+
+                                  <input type="text" id="lname" name="lastname" placeholder="Bus ID"><br>
+                                  
+                                  <input type="submit" value="Add route">
+
+                                    <h1>Search a route</h1>
+                              
+                                  
+                                  
+                                </form>
+
+                                <form action="">
+                                  <div  class="from-to-searchbar">
+
+                                     
+
+                                      <div class="from"> 
+                                          
+                                          <div class="from-to-search-text">  <label for="fromtext">From</label> </div>
+                                              <div class="options"> 
+                                                  <select name="" id="">
+
+                                                      <option value="option0"></option>
+                                                      <option value="option1">Option1</option>
+                                                      <option value="option2">Option2</option>
+                                                      <option value="option3">Option3</option>
+                                                  </select>
+                                               </div>
+                                          
+                                      </div>
+
+                                      <div class="to"> 
+                                          
+                                          <div class="from-to-search-text">   <label for="tottext"> TO </label>  </div>
+                                              <div class="options"> 
+                                                  <select name="" id="">
+
+                                                      <option value="option0"></option>
+                                                      <option value="option1">Option1</option>
+                                                      <option value="option2">Option2</option>
+                                                      <option value="option3">Option3</option>
+                                                  </select>
+                                              </div>
+                                      </div>
+                                          <!-- <p class="from-to-search-text">To</p> </div> -->
+
+                                      <div class="searchbar"> 
+
+                                          <img class="search-icon from-to-search-text search-icon"  src="./public/vector1.svg" alt="">
+                                          <input type="submit" class="from-to-search-text search" value="Search">
+                                          
+
+                                      </div>
+                                      
+
+                                  </div>
+                              </form> 
+
+                                <div class="content">
+                                        
+                                  <div class="content-element">
+
+                                      <div class="content-element-main">
+
+                                              <!-- Bus Name , Bus Number -->
+                                              <div class="content-element-main-divs">
+                                                  <div style="display: flex; margin-bottom: 17px;"> 
+                                                      <div class="bus-icon"><img  src="./public/vector4.svg" alt=""> </div>
+                                                      <div style="margin: auto; font-family: Montserrat;
+                                                      font-size: 25px;
+                                                      font-weight: 600;
+                                                      line-height: 30px;
+                                                      letter-spacing: 0.03em;
+                                                      text-align: left;
+                                                      " >NR-01 </div> 
+                                                  </div>
+                                                  <div style="font-family: Montserrat;
+                                                  font-size: 23px;
+                                                  font-weight: 500;
+                                                  line-height: 28px;
+                                                  letter-spacing: 0.035em;" class="bus-no">WB-94-3235</div>
+                                                  
+                                              </div>
+
+
+                                              <!-- Pickup Location & Time -->
+
+
+                                               <div class="content-element-main-divs pickup-drop"><div style="display: flex; margin-bottom: 4px;"> 
+                                                  <div class="location-icon"><img style="height: 19px;
+                                                      width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div>
+                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                  font-size: 20px;
+                                                  font-weight: 500;
+                                                  line-height: 24px;
+                                                  letter-spacing: 0.035em;
+                                                  text-align: left;
+                                                  color:  rgba(255, 76, 41, 1);
+                                                  " >Pickup </div> 
+                                              </div>
+                                              <div style="font-family: Montserrat;
+                                              font-size: 18px;
+                                              font-weight: 500;
+                                              line-height: 22px;
+                                              letter-spacing: 0.035em;
+                                              text-align: left;
+                                              ">NRI Fintech</div>
+                                              <div style="font-family: Montserrat;
+                                              font-size: 18px;
+                                              font-weight: 500;
+                                              line-height: 22px;
+                                              letter-spacing: 0.035em;
+                                              text-align: left;
+                                              ">9:00 AM</div>
+
+                                              </div>
+
+                                              <!-- Drop Location & Time -->
+
+                                              <div class="content-element-main-divs pickup-drop"> <div style="display: flex; margin-bottom: 4px;"> 
+                                                  <div class="location-icon"><img style="height: 19px;
+                                                      width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div>
+                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                  font-size: 20px;
+                                                  font-weight: 500;
+                                                  line-height: 24px;
+                                                  letter-spacing: 0.035em;
+                                                  text-align: left;
+                                                  color:  rgba(255, 76, 41, 1); 
+                                                  " >Drop </div> 
+                                              </div>
+                                              <div style="font-family: Montserrat;
+                                              font-size: 18px;
+                                              font-weight: 500;
+                                              line-height: 22px;
+                                              letter-spacing: 0.035em;
+                                              text-align: left;
+                                              ">Ultodanga</div>
+                                              <div style="font-family: Montserrat;
+                                              font-size: 18px;
+                                              font-weight: 500;
+                                              line-height: 22px;
+                                              letter-spacing: 0.035em;
+                                              text-align: left;
+                                              ">12:00 AM</div>
+                                              
+                                              </div>
+
+                                              <!-- Seats Left -->
+                                              
+                                              <div class="content-element-main-divs seats-left"> 
+                                                  
+                                                  <div style="display: flex; margin-bottom: 4px;"> 
+                                                  <!-- <div class="location-icon"><img style="height: 19px;
+                                                      width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div> -->
+                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                      font-size: 20px;
+                                                      font-weight: 500;
+                                                      line-height: 24px;
+                                                      letter-spacing: 0.035em;
+                                                      text-align: left;
+
+                                                  color:  rgba(255, 76, 41, 1); 
+                                                  " > Seats Left </div> 
+                                              </div>
+                                              <div style="font-family: Montserrat;
+                                                      font-size: 18px;
+                                                      font-weight: 500;
+                                                      line-height: 22px;
+                                                      letter-spacing: 0.035em;
+                                                      text-align: left;
+
+                                              ">  30 </div>
+                                              
+                                                  
+                                                  
+                                              </div> 
+
+                                              <!-- See Route ,Book -->
+
+                                              <div class="content-element-main-divs">
+                                                  
+                                                  
+                                                 <div style="display: flex; margin-bottom: 17px;"> 
+                                                      <div class="route-icon"><img  src="./public/route-icon.svg" alt=""> </div>
+                                                      <div style="margin: auto; font-family: Montserrat;
+                                                          font-size: 18px;
+                                                          font-weight: 500;
+                                                          line-height: 22px;
+                                                          letter-spacing: 0.035em;
+                                                          text-align: left; color: rgba(79, 79, 79, 1); cursor: pointer;
+;
+                                                      " >See Route </div> 
+                                                  </div>
+                                                  <button style="font-family: Montserrat;
+                                                  font-size: 23px;
+                                                  font-weight: 500;
+                                                  line-height: 28px;
+                                                  letter-spacing: 0.035em; background: rgba(8, 32, 50, 1); color:rgba(255, 255, 255, 1); cursor: pointer; 
+                                                  display: flex; 
+
+                                                  ">  <div style="margin:auto"> 2</div>  <div style="margin:auto">Book</div> </button>
+                                              
+                                              </div>
+                                      </div>
+                                  </div>
+
+
+                                  
+                                  <!-- <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div>
+                                  <div class="content-element"></div> -->
+
+                                </div>
+
                               </div>
 
                               <!--third div-->
@@ -145,7 +371,7 @@
                               <!--fourth div-->
 
                               <div id="fourthdiv" style="display:none;">
-                                <h1>Hello from 4th div</h1>
+                                <h1>To be generated..</h1>
                               </div>
                                  
                               </div>
@@ -155,7 +381,7 @@
             
            
                         
-            </div>
+        </div>
 
         <!-- Footer -->
         <div class="footer">
@@ -173,6 +399,5 @@
 
     <script src="./index.js">
     </script>
-    <script src="https://kit.fontawesome.com/8e546228e7.js" crossorigin="anonymous"></script>
 </body>
 </html>

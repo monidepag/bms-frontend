@@ -1,7 +1,7 @@
 /*
 
-	@author: Arijit Saha
-	@desc: css for index.html (Header & Footer Template)
+	@author: Monidepa Ghosh
+	@desc: css for index.html (admin site)
 	@file path from root: Ex ./index.css/
 
 
@@ -12,7 +12,7 @@
 :root {
     /* fonts */
     --font-montserrat: Montserrat;
-
+  
     /* font sizes */
     --font-size-xs: 18px;
     --font-size-sm: 20px;
@@ -22,7 +22,7 @@
     --font-size-2xl: 35px;
     --font-size-3xl: 40px;
     --font-size-4xl: 50px;
-
+  
     /* Colors */
     --color-white: #fff;
     --color-darkslategray-100: #334756;
@@ -34,23 +34,47 @@
     --color-dimgray-100: #504f4f;
     --color-dimgray-200: #4f4f4f;
     --color-whitesmoke: #ececec;
-
+  
     /* border radiuses */
     --br-md: 10px;
-}
+  }
 
 body {
     margin: 0;
     line-height: normal;
-}
+    height: 100vh;
 
-.main {
-    min-height: 100vh;
+  
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+.main
+{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    
+    overflow-x: hidden;
+    
 }
 
-.header {
+.header{
     height: 89px;
     width: 100%;
     background-color: var(--color-gray-200);
@@ -61,103 +85,116 @@ body {
     justify-content: center;
     color: #fff;
 }
-
-.header-div {
+.header-div{
     height: 100%;
     width: 90%;
     margin-left: 20px;
     display: inline-flex;
-    margin-right: 4px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-right:  4px ;
+    margin-top:  4px ;
+    margin-bottom:  4px ;
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
     font-size: var(--font-size-2xl);
     color: #fff;
 }
-
-.nrifintech {
+.nrifintech{
     margin-top: auto;
     margin-bottom: auto;
     font-size: 35px;
+    /* font-style: Montserrat;  */
     font-family: Montserrat;
     font-weight: 400;
     line-height: 43px;
     letter-spacing: 0em;
     cursor: pointer;
-}
+    color: rgba(255, 255, 255, 1);
 
-.header-end {
+}
+.header-end{
     display: flex;
     flex: 1 1 0%;
     align-items: center;
     text-align: right;
-    padding-right: 8px;
+    padding-right: 8px ;
 }
-
-.header-end-items {
+.header-end-items
+{
     margin-left: auto;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top:  4px ;
+    margin-bottom:  4px ;
     margin-right: 38px;
     height: 80%;
-    width: max-content;
+    width:max-content;
     font-size: 25px;
     display: flex;
     justify-content: space-between;
 
 }
-
-.vector-icon {
+.vector-icon{
     margin-right: 10px;
 }
 
-.booking {
+.booking{
     font-family: Montserrat;
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0em;
     cursor: pointer;
+    color: rgba(255, 255, 255, 1);
 }
-
-.logout {
+.logout{
     font-family: Montserrat;
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0em;
     cursor: pointer;
+    color: rgba(255, 255, 255, 1);
 }
-
-.body-part {
-    height: 800px;
+.body-part
+{
+    
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
-.footer {
-    height: 48px;
+.footer
+{
+    height: 49px;
     width: 100%;
     background-color: var(--color-gray-200);
     display: flex;
     border-bottom-width: 2px;
-    padding: 2px;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-items: center;
     justify-content: center;
     color: #fff;
     margin-top: auto;
-    z-index: 2;
-}
 
-.footer-element-smallerscreen {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    z-index: 2;
+
+
+}
+.footer-element-smallerscreen{
     display: none;
 }
 
 
+
 input[type=text], select {
-    width: 100%;
+    width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -196,7 +233,12 @@ form {
 /* dont look here */
 
 
-/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+#text1,#text2,#text3,#text4{
+    padding: 25% 5%;
+}
+
+
+
 html {
     box-sizing: border-box
 }
@@ -207,7 +249,7 @@ html {
     box-sizing: inherit
 }
 
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -257,7 +299,7 @@ template {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
 }
 
 a:active,
@@ -715,9 +757,14 @@ a {
 .sidebar {
     height: 100%;
     width: 200px;
-    background-color: #fff;
+    background-color:#EEEEEE;
     position: fixed !important;
     z-index: 1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.035em;
     
 }
 
@@ -1982,7 +2029,35 @@ a {
     border-color: #e7ffff !important
 }
 
+.top,
+.bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.top {
+    top: 0
+}
+
+.bottom {
+    bottom: 0
+}
+
+
+
 /* Media Queries */
+@media(max-width: 1100px)
+{
+    .footer-element-smallerscreen{display: inline-block;}
+    .footer-element{display: none;}
+    
+}
+@media(max-width:750px)
+{
+    .header-end-items-text{display: none;}
+}
+
 @media(max-width: 750px) {
     .footer-element-smallerscreen {
         display: inline-block;
@@ -2191,19 +2266,4 @@ a {
     .auto {
         max-width: 100%
     }
-}
-
-.top,
-.bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1
-}
-
-.top {
-    top: 0
-}
-
-.bottom {
-    bottom: 0
 }

@@ -1,10 +1,7 @@
-
 /* 
-
-    @author: Arijit Saha
-	@desc: js for index.html (Header & Footer Template)
+    @author: Monidepa Ghosh
+	@desc: js for index.html (admin site)
 	@file path from root: Ex ./index.js/
-
 */
 
 var nrifintech="NRI TRAVEL";
@@ -37,6 +34,10 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("text1").style.color="red";
+	document.getElementById("text2").style.color="black";
+	document.getElementById("text3").style.color="black";
+	document.getElementById("text4").style.color="black";
   }
 
   function seconddiv(){
@@ -44,6 +45,10 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "block";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("text1").style.color="black";
+	document.getElementById("text2").style.color="red";
+	document.getElementById("text3").style.color="black";
+	document.getElementById("text4").style.color="black";
   }
 
   function thirddiv(){
@@ -51,6 +56,10 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "block";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("text1").style.color="black";
+	document.getElementById("text2").style.color="black";
+	document.getElementById("text3").style.color="red";
+	document.getElementById("text4").style.color="black";
   }
 
   function fourthdiv(){
@@ -58,4 +67,8 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "block";
+	document.getElementById("text1").style.color="black";
+	document.getElementById("text2").style.color="black";
+	document.getElementById("text3").style.color="black";
+	document.getElementById("text4").style.color="red";
   }
