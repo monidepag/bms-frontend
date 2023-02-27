@@ -72,3 +72,42 @@ function openSidebar() {
 	document.getElementById("text3").style.color="black";
 	document.getElementById("text4").style.color="red";
   }
+
+//   $(document).ready(function() {
+// 	var fieldIndex = 1;
+// 	$("#add-field").on("click", function() {
+// 	  var newField = $("<tr></tr>");
+// 	  var newroute = $("<td></td>");
+// 	  var newInput = $("<input>");
+// 	  newField.append(newroute);
+// 	  newField.append(newInput);
+// 	  newInput.attr("type", "text").attr("id", "field-" + (fieldIndex + 1)).attr("name", "field-" + (fieldIndex + 1));
+	  
+
+// 	  var newtiming = $("<td></td>");
+// 	  var newInput2 = $("<input>");
+// 	  newField.append(newtiming);
+// 	  newInput2.append(newInput2);
+// 	  newInput.attr("type", "text").attr("id", "field-" + (fieldIndex + 1)).attr("name", "field-" + (fieldIndex + 1));
+
+
+
+
+
+// 	  fieldIndex++;
+// 	});
+//   });
+
+
+  $(document).ready(function() {
+	var fieldIndex = 1;
+	$(".add-field").on("click", function(event) {
+		event.preventDefault();
+	// Create a new row with two text fields
+	var newRow = "<tr><td><input type='text' name='name'></td><td><input type='text' name='email'></td></tr>";
+	
+	// Append the new row to the table body
+	$(".container").append(newRow);
+	});
+  });
+  
