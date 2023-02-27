@@ -1,10 +1,7 @@
 /*
-
 	@author: Monidepa Ghosh
 	@desc: css for index.html (admin site)
 	@file path from root: Ex ./index.css/
-
-
 */
 
 
@@ -541,7 +538,8 @@ img {
 }
 
 a {
-    color: inherit
+    color: inherit;
+    font-size: 22px;
 }
 
 .table,
@@ -2319,4 +2317,3 @@ box-shadow: 2px 2px 2px #ddd;background:white;
     grid-gap:0;
     }
   }
-  

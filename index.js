@@ -110,4 +110,3 @@ function openSidebar() {
 	$(".container").append(newRow);
 	});
   });
-  
