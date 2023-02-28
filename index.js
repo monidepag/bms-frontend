@@ -110,3 +110,25 @@ function openSidebar() {
 	$(".container").append(newRow);
 	});
   });
+
+
+
+  function on() {
+	// document.getElementById("overlay").style.display = "block";
+	document.querySelector(".search-overlay").style.display="block";
+}
+
+function off() {
+	// document.getElementById("overlay").style.display = "none";
+	document.querySelector(".search-overlay").style.display="none";
+}
+
+function on2() {
+	// document.getElementById("overlay").style.display = "block";
+	document.querySelector(".bus-overlay").style.display="block";
+}
+
+function off2() {
+	// document.getElementById("overlay").style.display = "none";
+	document.querySelector(".bus-overlay").style.display="none";
+}

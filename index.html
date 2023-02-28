@@ -78,7 +78,7 @@
                               <!--first div-->
 
                               <div id="firstdiv" style="display:none;">
-                                <form action="/action_page.php">
+                                <form>
                                     <h1>Add an employee</h1>
   
                                     <input type="text" id="fname" name="firstname" placeholder="Name">
@@ -98,9 +98,12 @@
   
                                     <input type="text" id="lname" name="lastname" placeholder="Enter employee email or id">
                                 
-                                    <input type="submit" value="Search">
+                                    <!-- <input type="submit" value="Search" class="search-btn" onclick="on()"> -->
+
+                                    
                                     
                                   </form>
+                                  <button class="search-btn" onclick="on()"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt=""> Search</button>
                               </div>
 
                               <!--second div-->
@@ -441,8 +444,8 @@
 
                               <!--third div-->
 
-                              <div id="thirddiv" style="display:none;" style="padding-left: 5%;">
-                                <form action="/action_page.php">
+                              <div id="thirddiv" style="display:none;">
+                                <form>
                                     <h1>Add a bus</h1>
   
                                     <input type="text" id="fname" name="firstname" placeholder="Bus Number">
@@ -460,9 +463,10 @@
   
                                     <input type="text" id="lname" name="lastname" placeholder="Enter bus name/bus id/bus number">
                                 
-                                    <input type="submit" value="Search">
                                     
-                                  </form>
+                                    
+                                  </form><br>
+                                  <button class="bus-btn" onclick="on2()"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt=""> Confirm</button>
                               </div>
 
                               <!--fourth div-->
@@ -493,6 +497,79 @@
         </div>
     
     </div>
+
+<!-- 
+        *****   OverLays   ****** 
+    -->
+
+    <!-- Search Overlay -->
+
+    <div class="search-overlay" onclick="off()">
+        <div class="search-div">
+            
+            <div class="search-overlay-main-div">
+
+                <div class="cancel-text">
+                    <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Name">
+                                
+                                    
+                                    <input type="text" id="lname" name="lastname" placeholder="Email">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Password">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID"><br>
+                    </form>
+                </div>
+                <div class="confirm-cancel-buttons">
+                    <button class="confirm-button"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt="">Save</button>
+                    <button class="cancel-button"> <img class="confirm-cancel-icon" src="./public/cancel-icon.svg" alt="">Delete</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Search Overlay Ends Here-->
+
+    <!-- Bus Search Overlay -->
+
+    <div class="bus-overlay" onclick="off2()">
+        <div class="bus-div">
+            
+            <div class="bus-overlay-main-div">
+
+                <div class="search-text">
+                    <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Bus Number">
+                                
+                                    
+                                    <input type="text" id="lname" name="lastname" placeholder="Bus Name">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Total Seats">
+  
+  
+                                    <input type="text" id="lname" name="lastname" placeholder="Bus ID"><br>
+                    </form>
+                </div>
+                <div class="search-cancel-buttons">
+                    <button class="save-button"> <img class="search-cancel-icon" src="./public/confirm-icon.svg" alt="">Save</button>
+                    <button class="delete-button"> <img class="search-cancel-icon" src="./public/cancel-icon.svg" alt="">Delete</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bus Search Overlay Ends Here-->
+
+    <!--Overlay ends here-->
+
 
     <script src="./index.js">
     </script>
