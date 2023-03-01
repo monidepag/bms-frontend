@@ -34,10 +34,12 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("fifthdiv").style.display = "none";
 	document.getElementById("text1").style.color="red";
 	document.getElementById("text2").style.color="black";
 	document.getElementById("text3").style.color="black";
 	document.getElementById("text4").style.color="black";
+	document.getElementById("text5").style.color="black";
   }
 
   function seconddiv(){
@@ -45,10 +47,12 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "block";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("fifthdiv").style.display = "none";
 	document.getElementById("text1").style.color="black";
 	document.getElementById("text2").style.color="red";
 	document.getElementById("text3").style.color="black";
 	document.getElementById("text4").style.color="black";
+	document.getElementById("text5").style.color="black";
   }
 
   function thirddiv(){
@@ -56,10 +60,12 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "block";
 	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("fifthdiv").style.display = "none";
 	document.getElementById("text1").style.color="black";
 	document.getElementById("text2").style.color="black";
 	document.getElementById("text3").style.color="red";
 	document.getElementById("text4").style.color="black";
+	document.getElementById("text5").style.color="black";
   }
 
   function fourthdiv(){
@@ -67,10 +73,25 @@ function openSidebar() {
 	document.getElementById("seconddiv").style.display = "none";
 	document.getElementById("thirddiv").style.display = "none";
 	document.getElementById("fourthdiv").style.display = "block";
+	document.getElementById("fifthdiv").style.display = "none";
 	document.getElementById("text1").style.color="black";
 	document.getElementById("text2").style.color="black";
 	document.getElementById("text3").style.color="black";
 	document.getElementById("text4").style.color="red";
+	document.getElementById("text5").style.color="black";
+  }
+
+  function fifthdiv(){
+	document.getElementById("firstdiv").style.display = "none";
+	document.getElementById("seconddiv").style.display = "none";
+	document.getElementById("thirddiv").style.display = "none";
+	document.getElementById("fourthdiv").style.display = "none";
+	document.getElementById("fifthdiv").style.display = "block";
+	document.getElementById("text1").style.color="black";
+	document.getElementById("text2").style.color="black";
+	document.getElementById("text3").style.color="black";
+	document.getElementById("text4").style.color="black";
+	document.getElementById("text5").style.color="red";
   }
 
 //   $(document).ready(function() {
@@ -132,3 +153,60 @@ function off2() {
 	// document.getElementById("overlay").style.display = "none";
 	document.querySelector(".bus-overlay").style.display="none";
 }
+
+function on3() {
+	// document.getElementById("overlay").style.display = "block";
+	document.querySelector(".destination-overlay").style.display="block";
+}
+
+function off3() {
+	// document.getElementById("overlay").style.display = "none";
+	document.querySelector(".destination-overlay").style.display="none";
+}
+
+// $(document).ready(function() {
+    
+//     var wrapper = $(".container");
+//     var add_button = $(".add-field");
+
+    
+//     $(add_button).click(function(e) {
+//         e.preventDefault();
+//         $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="delete">Delete</a></div>'); //add input box
+//     });
+
+//     $(wrapper).on("click", ".delete", function(e) {
+//         e.preventDefault();
+//         $(this).parent('div').remove();
+//     })
+// });
+
+// function add_field() {
+// 	const h = document.querySelector("container");
+// 	let html = ""
+// }
+
+
+function add_field() {
+	var table = document.querySelector(".container");
+	var row = table.insertRow(-1);
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+
+	var div1 = document.querySelector(".from");
+	var newDiv1 = document.createElement("div");
+	newDiv1.innerHTML = div1.innerHTML;
+	cell1.appendChild(newDiv1);
+
+	var div2 = document.querySelector(".to");
+	var newDiv2 = document.createElement("div");
+	newDiv2.innerHTML = div2.innerHTML;
+	cell2.appendChild(newDiv2);
+
+	// var originalCell1 = div1.parentNode;
+	// originalCell1.appendChild(newDiv1.cloneNode(true));
+
+	// var originalCell2 = div2.parentNode;
+	// originalCell2.appendChild(newDiv2.cloneNode(true));
+  }
+  

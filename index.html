@@ -8,20 +8,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/css"> -->
 
     <title>Admin</title>
 </head>
+
 <body>
 
     <div class="main">
@@ -36,96 +35,92 @@
             </div>
             <div class="header-end">
 
-                        
 
-              
-                        <div class="header-end-items">
-                                <img class="vector-icon" alt="" src="public/vector1.svg" />
-                                <p class="header-end-items-text logout">  <a href="">Logout  </a>  </p>
-                        </div>
-                
+
+
+                <div class="header-end-items">
+                    <img class="vector-icon" alt="" src="public/vector1.svg" />
+                    <p class="header-end-items-text logout"> <a href="">Logout </a> </p>
+                </div>
+
             </div>
         </div>
 
         <!-- Body -->
         <div class="body-part">
-            
-                    <div>
-                        
-                        <!--
+
+            <div>
+
+                <!--
                             Write your body code within this div
                             
                             
                              -->
 
-                             
-                             <!--sidebar-->
 
-                             <div class="sidebar bar-block collapse card animate-left" style="width:200px;" id="mySidebar">
-                                <button class="bar-item button large hide-large" onclick="closeSidebar()">Close &times;</button>
-                                <a href="#" class="bar-item button" onclick="firstdiv()" id="text1">Employees</a>
-                                <a href="#" class="bar-item button" onclick="seconddiv()" id="text2">Routes</a>
-                                <a href="#" class="bar-item button" onclick="thirddiv()" id="text3">Bus</a>
-                                <a href="#" class="bar-item button" onclick="fourthdiv()" id="text4">Generate Report</a>
-                              </div>
-                              
-                              <div class="main" style="margin-left:200px;">
-                              <div class="red">
-                                <button class="button red xlarge hide-large" onclick="openSidebar()">&#9776;</button>
-                                
-                              </div>
-                              
-                              <!--first div-->
+                <!--sidebar-->
 
-                              <div id="firstdiv" style="display:none;">
-                                <form>
-                                    <h1>Add an employee</h1>
-  
-                                    <input type="text" id="fname" name="firstname" placeholder="Name">
-                                
-                                    
-                                    <input type="text" id="lname" name="lastname" placeholder="Email">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Password">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID"><br>
+                <div class="sidebar bar-block collapse card animate-left" style="width:200px;" id="mySidebar">
+                    <button class="bar-item button large hide-large" onclick="closeSidebar()">Close &times;</button>
+                    <a href="#" class="bar-item button" onclick="firstdiv()" id="text1">Employees</a>
+                    <a href="#" class="bar-item button" onclick="seconddiv()" id="text2">Routes</a>
+                    <a href="#" class="bar-item button" onclick="thirddiv()" id="text3">Bus</a>
+                    <a href="#" class="bar-item button" onclick="fourthdiv()" id="text4">Generate Report</a>
+                    <a href="#" class="bar-item button" onclick="fifthdiv()" id="text4">Destination</a>
+                </div>
 
-                                    <input type="submit" value="Add">
-  
-                                      <h1>Search/edit an employee</h1>
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Enter employee email or id">
-                                
-                                    <!-- <input type="submit" value="Search" class="search-btn" onclick="on()"> -->
+                <div class="main" style="margin-left:200px;">
+                    <div class="red">
+                        <button class="button red xlarge hide-large" onclick="openSidebar()">&#9776;</button>
 
-                                    
-                                    
-                                  </form>
-                                  <button class="search-btn" onclick="on()"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt=""> Search</button>
-                              </div>
+                    </div>
 
-                              <!--second div-->
+                    <!--first div-->
 
-                              <div id="seconddiv" style="display:none;">
-                                <form action="/action_page.php">
-                                
-                                <section>
-                                  <h1>Add a route</h1>
-                                  <input class ="add-field" type="submit" value="+ Add Field">
-                                </section>
-            
-                                <!--<div id="container">
+                    <div id="firstdiv" style="display:none;">
+                        <form>
+                            <h1>Add an employee</h1>
+
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+
+
+                            <input type="email" id="lname" name="lastname" placeholder="Email">
+
+
+                            <input type="password" id="lname" name="lastname" placeholder="Password"><br>
+
+                            <input type="submit" value="+ Add Employee">
+
+                            <h1>Search/edit an employee</h1>
+
+                            <input type="text" id="lname" name="lastname" placeholder="Enter employee email or id">
+
+                            <!-- <input type="submit" value="Search" class="search-btn" onclick="on()"> -->
+
+
+
+                        </form>
+                        <button class="search-btn" onclick="on()"> <img class="confirm-cancel-icon"
+                                src="./public/icons8-search.svg" alt=""> Search</button>
+                    </div>
+
+                    <!--second div-->
+
+                    <div id="seconddiv" style="display:none;">
+
+
+
+
+                        <!--<div id="container">
                                     <div>
                                       <label for="field-1">Field 1:</label>
                                       <input type="text" id="field-1" name="field-1">
                                     </div>
                                   </div>
                                 -->
-                                  
 
-                                <table class="container">
+
+                        <!-- <table class="container">
                                     <tr>
                                      <td><input type="text" id="fname" name="firstname" placeholder="NRI Fintech"></td>
                                      <td><input type="text" id="lname" name="lastname" placeholder="Add Timing"></td>   
@@ -135,8 +130,114 @@
                                         <td><input type="text" id="lname" name="lastname" placeholder="Ultodanga"></td>
                                         <td><input type="text" id="lname" name="lastname" placeholder="Add Timing"></td> 
                                     </tr>
+                                </table> -->
+
+                        <section>
+                            <h1>Add a route</h1>
+                            <button class="search-btn" onclick="add_field()">+ Add Field</button>
+                        </section>
+
+                        <form action="">
+
+                            <div class="from-to-searchbar">
+
+
+
+                                <table class="container">
+                                    <tr>
+                                        <td>
+                                            <div class="from">
+
+                                                <div class="from-to-search-text"> <label for="fromtext">Add Bus
+                                                        Stop</label> </div>
+                                                <div class="options">
+                                                    <select name="" id="">
+
+                                                        <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="to">
+
+                                                <div class="from-to-search-text"> <label for="tottext">Add
+                                                        Timing</label> </div>
+                                                <div class="options">
+                                                    <input type="time" id="time-input" name="time">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="from">
+
+                                                <div class="from-to-search-text"> <label for="fromtext">Add Bus
+                                                        Stop</label> </div>
+                                                <div class="options">
+                                                    <select name="" id="">
+
+                                                        <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="to">
+
+                                                <div class="from-to-search-text"> <label for="tottext">Add
+                                                        Timing</label> </div>
+                                                <div class="options">
+                                                    <input type="time" id="time-input" name="time">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
                                 </table>
-                                <!--
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="from">
+
+                                                <div class="from-to-search-text"> <label for="fromtext">Bus ID</label>
+                                                </div>
+                                                <div class="options">
+                                                    <select name="" id="">
+
+                                                        <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+
+
+                            </div>
+
+
+
+                            <!--
                                   <input type="text" id="fname" name="firstname" placeholder="NRI Fintech">
                               
                                   
@@ -145,94 +246,98 @@
                                   <input type="text" id="lname" name="lastname" placeholder="Add Timing">
                                   -->
 
-                                  
-                                  <input  type="text" id="lname" name="lastname" placeholder="Bus ID"><br>
-                                  <input type="submit" value="Add route">
 
-                                    
-                                    
-                              
-                                  
-                                  
-                                </form>
 
-                                <form action="">
-                                    <h1>Search a route</h1>
-                                  <div  class="from-to-searchbar">
+                            <input type="submit" value="+ Add route">
 
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="from"> 
-                                                    
-                                                    <div class="from-to-search-text">  <label for="fromtext">From</label> </div>
-                                                        <div class="options"> 
-                                                            <select name="" id="">
 
-                                                                <option value="option0"></option>
-                                                                <option value="option1">Option1</option>
-                                                                <option value="option2">Option2</option>
-                                                                <option value="option3">Option3</option>
-                                                            </select>
-                                                        </div>
-                                                    
+                        </form>
+
+
+
+
+
+                        <form action="">
+                            <h1>Search a route</h1>
+                            <div class="from-to-searchbar">
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="from">
+
+                                                <div class="from-to-search-text"> <label for="fromtext">From</label>
                                                 </div>
-                                            </td>
+                                                <div class="options">
+                                                    <select name="" id="">
 
-                                            <td>
-                                                <div class="to"> 
-                                                    
-                                                        <div class="from-to-search-text">   <label for="tottext"> TO </label>  </div>
-                                                            <div class="options"> 
-                                                                <select name="" id="">
+                                                        <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option>
+                                                    </select>
+                                                </div>
 
-                                                                    <option value="option0"></option>
-                                                                    <option value="option1">Option1</option>
-                                                                    <option value="option2">Option2</option>
-                                                                    <option value="option3">Option3</option>
-                                                                </select>
-                                                            </div>
-                                                    </div>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="to">
+
+                                                <div class="from-to-search-text"> <label for="tottext"> TO </label>
+                                                </div>
+                                                <div class="options">
+                                                    <select name="" id="">
+
+                                                        <option value="option0"></option>
+                                                        <option value="option1">Option1</option>
+                                                        <option value="option2">Option2</option>
+                                                        <option value="option3">Option3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
 
 
-                                          <!-- <p class="from-to-search-text">To</p> </div> -->
+                                <!-- <p class="from-to-search-text">To</p> </div> -->
 
-                                      <div class="searchbar"> 
+                                <div class="searchbar">
 
-                                          <img class="search-icon from-to-search-text search-icon"  src="./public/vector1.svg" alt="">
-                                          <input type="submit" class="from-to-search-text search" value="Search">
-                                          
 
-                                      </div>
-                                      
+                                    <button class="search-route"> <img class="confirm-cancel-icon"
+                                            src="./public/icons8-search.svg" alt=""> Search</button>
 
-                                  </div>
-                                  
-                              </form> 
 
-                              
-                                <div class="content" style="margin:10px;margin-top:30px;">
-                                        
-                                    
-                                  <div class="content-element">
-                                    <form>
-                                      <div class="content-element-main" style="display: grid;
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
+
+                        <div class="content" style="margin:10px;margin-top:30px;">
+
+
+                            <div class="content-element">
+                                <form>
+                                    <div class="content-element-main" style="display: grid;
                                       grid-template-columns: 20% 20% 20% 20% 20%;padding:15px;display: flex;
                                       flex-wrap: wrap;
                                       align-items: stretch;
                                       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
 
-                                              <!-- Bus Name , Bus Number -->
-                                              <!--
+                                        <!-- Bus Name , Bus Number -->
+                                        <!--
                                               <div class="content-element-main-divs" style="background:green;">
                                                 -->
-                                                <div class="content-element-main-divs"><div style="display: flex; margin-bottom: 4px;"> 
-                                                    <div class="location-icon"><img style="height: 28px;
+                                        <div class="content-element-main-divs">
+                                            <div style="display: flex; margin-bottom: 4px;">
+                                                <div class="location-icon"><img style="height: 28px;
                                                         width: 28px;" src="./public/vector4.svg" alt=""> </div>
-                                                    <div style="margin-right: auto; font-family: Montserrat;
+                                                <div style="margin-right: auto; font-family: Montserrat;
                                                     font-size: 22px;
                                                     font-weight: 700;
                                                     line-height: 24px;
@@ -240,9 +345,9 @@
                                                     text-align: left;
                                                     color:  darkblue;
                                                    
-                                                    " >&nbsp;NR-01</div> 
-                                                </div>
-                                                <div style="font-family: Montserrat;
+                                                    ">&nbsp;NR-01</div>
+                                            </div>
+                                            <div style="font-family: Montserrat;
                                                 font-size: 20px;
                                                 font-weight: 600;
                                                 line-height: 22px;
@@ -251,7 +356,7 @@
                                                 color:  darkblue;
                                                 
                                                 ">WB-94-3235</div>
-                                                <!--
+                                            <!--
                                                 <div style="background:blue;style="display: flex; margin-bottom: 4px;">
                                                       <div class="bus-icon"><img  src="./public/vector4.svg" alt=""> </div>
                                                       <div style="margin: auto; font-family: Montserrat;
@@ -270,33 +375,34 @@
                                                   letter-spacing: 0.035em;" class="bus-no"><p>WB-94-3235</p>
                                                 </div>
                                                 -->
-                                                  
-                                              </div>
+
+                                        </div>
 
 
-                                              <!-- Pickup Location & Time -->
+                                        <!-- Pickup Location & Time -->
 
 
-                                               <div class="content-element-main-divs pickup-drop"><div style="display: flex; margin-bottom: 4px;"> 
-                                                  <div class="location-icon"><img style="height: 19px;
+                                        <div class="content-element-main-divs pickup-drop">
+                                            <div style="display: flex; margin-bottom: 4px;">
+                                                <div class="location-icon"><img style="height: 19px;
                                                       width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div>
-                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                <div style="margin-right: auto; font-family: Montserrat;
                                                   font-size: 20px;
                                                   font-weight: 500;
                                                   line-height: 24px;
                                                   letter-spacing: 0.035em;
                                                   text-align: left;
                                                   color:  rgba(255, 76, 41, 1);
-                                                  " >Pickup </div> 
-                                              </div>
-                                              <div style="font-family: Montserrat;
+                                                  ">Pickup </div>
+                                            </div>
+                                            <div style="font-family: Montserrat;
                                               font-size: 18px;
                                               font-weight: 500;
                                               line-height: 22px;
                                               letter-spacing: 0.035em;
                                               text-align: left;
                                               ">NRI Fintech</div>
-                                              <div style="font-family: Montserrat;
+                                            <div style="font-family: Montserrat;
                                               font-size: 18px;
                                               font-weight: 500;
                                               line-height: 22px;
@@ -304,74 +410,75 @@
                                               text-align: center;
                                               ">9:00 AM</div>
 
-                                              </div>
+                                        </div>
 
-                                              <!-- Drop Location & Time -->
+                                        <!-- Drop Location & Time -->
 
-                                              <div class="content-element-main-divs pickup-drop"> <div style="display: flex; margin-bottom: 4px;"> 
-                                                  <div class="location-icon"><img style="height: 19px;
+                                        <div class="content-element-main-divs pickup-drop">
+                                            <div style="display: flex; margin-bottom: 4px;">
+                                                <div class="location-icon"><img style="height: 19px;
                                                       width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div>
-                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                <div style="margin-right: auto; font-family: Montserrat;
                                                   font-size: 20px;
                                                   font-weight: 500;
                                                   line-height: 24px;
                                                   letter-spacing: 0.035em;
                                                   text-align: left;
                                                   color:  rgba(255, 76, 41, 1); 
-                                                  " >Drop </div> 
-                                              </div>
-                                              <div style="font-family: Montserrat;
+                                                  ">Drop </div>
+                                            </div>
+                                            <div style="font-family: Montserrat;
                                               font-size: 18px;
                                               font-weight: 500;
                                               line-height: 22px;
                                               letter-spacing: 0.035em;
                                               text-align: left;
                                               ">Ultodanga</div>
-                                              <div style="font-family: Montserrat;
+                                            <div style="font-family: Montserrat;
                                               font-size: 18px;
                                               font-weight: 500;
                                               line-height: 22px;
                                               letter-spacing: 0.035em;
                                               text-align: center;
                                               ">12:00 AM</div>
-                                              
-                                              </div>
 
-                                              <!-- Seats Left -->
-                                              
-                                              <div class="content-element-main-divs seats-left"> 
-                                                  
-                                                  <div style="display: flex; margin-bottom: 4px;"> 
-                                                  <!-- <div class="location-icon"><img style="height: 19px;
+                                        </div>
+
+                                        <!-- Seats Left -->
+
+                                        <div class="content-element-main-divs seats-left">
+
+                                            <div style="display: flex; margin-bottom: 4px;">
+                                                <!-- <div class="location-icon"><img style="height: 19px;
                                                       width: 17px;" src="./public/placeholder-14@2x.png" alt=""> </div> -->
-                                                  <div style="margin-right: auto; font-family: Montserrat;
+                                                <div style="margin-right: auto; font-family: Montserrat;
                                                       font-size: 20px;
                                                       font-weight: 500;
                                                       line-height: 24px;
                                                       letter-spacing: 0.035em;
                                                       text-align: left;
                                                   color:  rgba(255, 76, 41, 1); 
-                                                  " > Seats Left </div> 
-                                              </div>
-                                              <div style="font-family: Montserrat;
+                                                  "> Seats Left </div>
+                                            </div>
+                                            <div style="font-family: Montserrat;
                                                       font-size: 18px;
                                                       font-weight: 500;
                                                       line-height: 22px;
                                                       letter-spacing: 0.035em;
                                                       text-align: center;
-                                              ">  30 </div>
-                                              
-                                                  
-                                                  
-                                              </div> 
+                                              "> 30 </div>
 
-                                              <!-- See Route ,Book -->
 
-                                              <div class="content-element-main-divs">
-                                                  
-                                                  
-                                                 <div style="display: flex; margin-bottom: 17px;"> 
-                                                    <!--
+
+                                        </div>
+
+                                        <!-- See Route ,Book -->
+
+                                        <div class="content-element-main-divs">
+
+
+                                            <div style="display: flex; margin-bottom: 17px;">
+                                                <!--
                                                       <div class="route-icon"><img  src="./public/route-icon.svg" alt=""> </div>
                                                       <div style="margin: auto; font-family: Montserrat;
                                                           font-size: 18px;
@@ -390,22 +497,22 @@
                                                   display: flex; 
                                                   "><div style="margin:auto">Edit</div> </a>
                                                   -->
-                                                  
-                                                    <div class="location-icon"><img style="height: 19px;
+
+                                                <div class="location-icon"><img style="height: 19px;
                                                         width: 17px;" src="./public/route-icon.svg" alt=""> </div>
-                                
-                                                    <div style="margin-right: auto; font-family: Montserrat;
+
+                                                <div style="margin-right: auto; font-family: Montserrat;
                                                     font-size: 20px;
                                                     font-weight: 500;
                                                     line-height: 24px;
                                                     letter-spacing: 0.035em;
                                                     text-align: left;
                                                     color:  darkblue;
-                                                    " >&nbsp;See route </div>
-                                                        
-                                                    </div>
+                                                    ">&nbsp;See route </div>
 
-                                                    <div style="font-family: Montserrat;
+                                            </div>
+
+                                            <div style="font-family: Montserrat;
                                                     font-size: 18px;
                                                     font-weight: 500;
                                                     line-height: 22px;
@@ -413,22 +520,23 @@
                                                     text-align: right;
                                                     
                                                     color:red;
-                                                    "><a href=""><img class="vector-icon" alt="" src="public/edit-button.svg" style="height: 19px;
-                                                        width: 17px;color:red;margin:auto;"/>&nbsp;Edit</a></div>
+                                                    "><a href=""><img class="vector-icon" alt=""
+                                                        src="public/edit-button.svg" style="height: 19px;
+                                                        width: 17px;color:red;margin:auto;" />&nbsp;Edit</a></div>
 
 
 
-                                              
-                                              </div>
-                                            
-                                      </div>
-                        
-                                  </div>
-                                
+
+                                        </div>
+
+                                    </div>
+
+                            </div>
 
 
-                                  
-                                  <!-- <div class="content-element"></div>
+
+
+                            <!-- <div class="content-element"></div>
                                   <div class="content-element"></div>
                                   <div class="content-element"></div>
                                   <div class="content-element"></div>
@@ -437,51 +545,81 @@
                                   <div class="content-element"></div>
                                   <div class="content-element"></div> -->
 
-                                </div>
-                                
+                        </div>
 
-                              </div>
 
-                              <!--third div-->
-
-                              <div id="thirddiv" style="display:none;">
-                                <form>
-                                    <h1>Add a bus</h1>
-  
-                                    <input type="text" id="fname" name="firstname" placeholder="Bus Number">
-                                
-                                    
-                                    <input type="text" id="lname" name="lastname" placeholder="Total seats">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Bus Name">
-  
-  
-                                    
-  
-                                      <h1>Search/edit a bus</h1>
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Enter bus name/bus id/bus number">
-                                
-                                    
-                                    
-                                  </form><br>
-                                  <button class="bus-btn" onclick="on2()"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt=""> Confirm</button>
-                              </div>
-
-                              <!--fourth div-->
-
-                              <div id="fourthdiv" style="display:none;">
-                                <h1>To be generated..</h1>
-                              </div>
-                                 
-                              </div>
-                              
-                              
                     </div>
-            
-           
-                        
+
+                    <!--third div-->
+
+                    <div id="thirddiv" style="display:none;">
+                        <form>
+                            <h1>Add a bus</h1>
+
+                            <input type="number" id="fname" name="firstname" placeholder="Bus Number">
+
+
+                            <input type="number" id="lname" name="lastname" placeholder="Total seats">
+
+
+                            <input type="text" id="lname" name="lastname" placeholder="Bus Name"><br>
+
+
+                            <input type="submit" value="+ Add Bus">
+
+                            <h1>Search/edit a bus</h1>
+
+                            <input type="text" id="lname" name="lastname"
+                                placeholder="Enter bus name/bus id/bus number">
+
+
+
+                        </form><br>
+                        <button class="bus-btn" onclick="on2()"> <img class="confirm-cancel-icon"
+                                src="./public/icons8-search.svg" alt=""> Search</button>
+                    </div>
+
+                    <!--fourth div-->
+
+                    <div id="fourthdiv" style="display:none;">
+                        <h1>To be generated..</h1>
+                    </div>
+
+                    <!--fifth div-->
+
+                    <div id="fifthdiv" style="display:none;">
+                        <form>
+                            <h1>Add a destination</h1>
+                            
+                            <input type="text" id="lname" name="lastname" placeholder="Bus Name">
+
+                            <input type="number" id="latitude-input" name="latitude" min="-90" max="90" step="any" placeholder="Enter latitude">
+
+
+                            <input type="number" id="longitude-input" name="longitude" min="-180" max="180" step="any" placeholder="Enter longitude"><br>
+
+
+                            <input type="submit" value="+ Add Destination">
+
+                            <h1>Search/edit a bus</h1>
+
+                            <input type="text" id="lname" name="lastname"
+                                placeholder="Enter bus name/bus id/bus number">
+
+
+
+                        </form><br>
+                        <button class="search-destination" onclick="on3()"> <img class="confirm-cancel-icon"
+                                src="./public/icons8-search.svg" alt=""> Search</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
         </div>
 
         <!-- Footer -->
@@ -495,10 +633,10 @@
                 All rights reserved by NRI
             </div>
         </div>
-    
+
     </div>
 
-<!-- 
+    <!-- 
         *****   OverLays   ****** 
     -->
 
@@ -506,26 +644,28 @@
 
     <div class="search-overlay" onclick="off()">
         <div class="search-div">
-            
+
             <div class="search-overlay-main-div">
 
                 <div class="cancel-text">
                     <form>
                         <input type="text" id="fname" name="firstname" placeholder="Name">
-                                
-                                    
-                                    <input type="text" id="lname" name="lastname" placeholder="Email">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Password">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Employee ID"><br>
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Email">
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Password">
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Employee ID"><br>
                     </form>
                 </div>
                 <div class="confirm-cancel-buttons">
-                    <button class="confirm-button"> <img class="confirm-cancel-icon" src="./public/confirm-icon.svg" alt="">Save</button>
-                    <button class="cancel-button"> <img class="confirm-cancel-icon" src="./public/cancel-icon.svg" alt="">Delete</button>
+                    <button class="confirm-button"> <img class="confirm-cancel-icon" src="./public/arrow-right-circle-fill.svg"
+                            alt=""> Save</button>
+                    <button class="cancel-button"> <img class="confirm-cancel-icon" src=""
+                            alt=""> Delete</button>
                 </div>
 
             </div>
@@ -539,26 +679,28 @@
 
     <div class="bus-overlay" onclick="off2()">
         <div class="bus-div">
-            
+
             <div class="bus-overlay-main-div">
 
                 <div class="search-text">
                     <form>
                         <input type="text" id="fname" name="firstname" placeholder="Bus Number">
-                                
-                                    
-                                    <input type="text" id="lname" name="lastname" placeholder="Bus Name">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Total Seats">
-  
-  
-                                    <input type="text" id="lname" name="lastname" placeholder="Bus ID"><br>
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Bus Name">
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Total Seats">
+
+
+                        <input type="text" id="lname" name="lastname" placeholder="Bus ID"><br>
                     </form>
                 </div>
                 <div class="search-cancel-buttons">
-                    <button class="save-button"> <img class="search-cancel-icon" src="./public/confirm-icon.svg" alt="">Save</button>
-                    <button class="delete-button"> <img class="search-cancel-icon" src="./public/cancel-icon.svg" alt="">Delete</button>
+                    <button class="save-button"> <img class="search-cancel-icon" src="./public/arrow-right-circle-fill.svg"
+                            alt=""> Save</button>
+                    <button class="delete-button"> <img class="search-cancel-icon" src=""
+                            alt=""> Delete</button>
                 </div>
 
             </div>
@@ -568,10 +710,44 @@
 
     <!-- Bus Search Overlay Ends Here-->
 
+    <!-- Destination Search Overlay -->
+
+    <div class="destination-overlay" onclick="off3()" >
+        <div class="destination-div">
+
+            <div class="destination-overlay-main-div">
+
+                <div class="search-text">
+                    <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Destination Name">
+
+
+                        <input type="number" id="latitude-input" name="latitude" min="-90" max="90" step="any" placeholder="Enter latitude">
+
+
+                            <input type="number" id="longitude-input" name="longitude" min="-180" max="180" step="any" placeholder="Enter longitude"><br>
+                    </form>
+                </div>
+                <div class="search-cancel-buttons">
+                    <button class="save-button"> <img class="search-cancel-icon" src="./public/arrow-right-circle-fill.svg"
+                            alt=""> Save</button>
+                    <button class="delete-button"> <img class="search-cancel-icon" src=""
+                            alt=""> Delete</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Destination Search Overlay Ends Here-->
+
     <!--Overlay ends here-->
 
 
     <script src="./index.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
+
 </html>
