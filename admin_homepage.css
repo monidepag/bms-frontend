@@ -214,11 +214,6 @@ input[type=text],[type=email],[type=password],[type=time],[type=number],select {
     display: inline-block;
   }
   
-  /* div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  } */
 
 form {
     padding: 0% 5%;
@@ -513,7 +508,7 @@ form {
 /* dont look here */
 
 
-#text1,#text2,#text3,#text4{
+#text1,#text2,#text3,#text4,#text5{
     padding: 25% 5%;
 }
 

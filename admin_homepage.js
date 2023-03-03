@@ -8,10 +8,6 @@ var nrifintech="NRI TRAVEL";
 var booking = `My Bookings`; 
 var logout="Logout";
 
-// document.getElementById("nrifintech").innerHTML=nrifintech;
-// document.getElementById("booking").innerHTML = booking; 
-// document.getElementById("logout").innerHTML = logout;
-
 document.querySelector(".nrifintech").innerHTML=nrifintech;
 document.querySelector(".booking").innerHTML=booking;
 document.querySelector(".logout").innerHTML=logout;
@@ -24,9 +20,6 @@ function openSidebar() {
   function closeSidebar() {
 	document.getElementById("mySidebar").style.display = "none";
   }
-
-
-
 
 
   function firstdiv(){
@@ -94,31 +87,6 @@ function openSidebar() {
 	document.getElementById("text5").style.color="red";
   }
 
-//   $(document).ready(function() {
-// 	var fieldIndex = 1;
-// 	$("#add-field").on("click", function() {
-// 	  var newField = $("<tr></tr>");
-// 	  var newroute = $("<td></td>");
-// 	  var newInput = $("<input>");
-// 	  newField.append(newroute);
-// 	  newField.append(newInput);
-// 	  newInput.attr("type", "text").attr("id", "field-" + (fieldIndex + 1)).attr("name", "field-" + (fieldIndex + 1));
-	  
-
-// 	  var newtiming = $("<td></td>");
-// 	  var newInput2 = $("<input>");
-// 	  newField.append(newtiming);
-// 	  newInput2.append(newInput2);
-// 	  newInput.attr("type", "text").attr("id", "field-" + (fieldIndex + 1)).attr("name", "field-" + (fieldIndex + 1));
-
-
-
-
-
-// 	  fieldIndex++;
-// 	});
-//   });
-
 
   $(document).ready(function() {
 	var fieldIndex = 1;
@@ -135,56 +103,28 @@ function openSidebar() {
 
 
   function on() {
-	// document.getElementById("overlay").style.display = "block";
 	document.querySelector(".search-overlay").style.display="block";
 }
 
 function off() {
-	// document.getElementById("overlay").style.display = "none";
 	document.querySelector(".search-overlay").style.display="none";
 }
 
 function on2() {
-	// document.getElementById("overlay").style.display = "block";
 	document.querySelector(".bus-overlay").style.display="block";
 }
 
 function off2() {
-	// document.getElementById("overlay").style.display = "none";
 	document.querySelector(".bus-overlay").style.display="none";
 }
 
 function on3() {
-	// document.getElementById("overlay").style.display = "block";
 	document.querySelector(".destination-overlay").style.display="block";
 }
 
 function off3() {
-	// document.getElementById("overlay").style.display = "none";
 	document.querySelector(".destination-overlay").style.display="none";
 }
-
-// $(document).ready(function() {
-    
-//     var wrapper = $(".container");
-//     var add_button = $(".add-field");
-
-    
-//     $(add_button).click(function(e) {
-//         e.preventDefault();
-//         $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="delete">Delete</a></div>'); //add input box
-//     });
-
-//     $(wrapper).on("click", ".delete", function(e) {
-//         e.preventDefault();
-//         $(this).parent('div').remove();
-//     })
-// });
-
-// function add_field() {
-// 	const h = document.querySelector("container");
-// 	let html = ""
-// }
 
 
 function add_field() {
@@ -203,10 +143,8 @@ function add_field() {
 	newDiv2.innerHTML = div2.innerHTML;
 	cell2.appendChild(newDiv2);
 
-	// var originalCell1 = div1.parentNode;
-	// originalCell1.appendChild(newDiv1.cloneNode(true));
 
-	// var originalCell2 = div2.parentNode;
-	// originalCell2.appendChild(newDiv2.cloneNode(true));
   }
+  
+
   
